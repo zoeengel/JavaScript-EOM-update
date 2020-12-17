@@ -94,7 +94,8 @@ body{
 }
 /* IMAGE OF ME */
 /* .pic_bio{
-    display:grid;   
+    display:flex;
+    flex-wrap   
 } */
 .zoe{
     width:770px;
@@ -104,7 +105,7 @@ body{
     margin-top:50px;
 }
 .zoe img{
- position: fixed;
+ position: relative;
 }
 .zoe img:hover{
   transform: scale(1.01); 
@@ -118,7 +119,7 @@ body{
     line-height: 80px ;
     padding: 10px;
     width:500px;
-    position: fixed;
+    position: relative;
 }
 /* ABOUT PAGE*/
 .test-header{
@@ -152,7 +153,8 @@ body{
 .card-body{
   padding: 30px 20px;
   text-align: left;
-  font-size: 15px;
+  line-height: 20px;
+  font-size: 18px;
   max-width: max-content;
   padding-bottom: 60px;
 }
@@ -246,7 +248,31 @@ h1{
 .bar.advanced::before{
   width: calc(80% - 10px);
 }
-
+/* PORTFOLIO CARDS */
+.card-body .btn{
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #3fa731, #439e31);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+  position: absolute;
+  bottom: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.card-img-top{
+  /* background-size: cover; */
+  background-size: contain;
+}
+.card-body .btn:hover{
+  background-image: linear-gradient(to right, #4c9b64, #418141);
+  text-decoration: none;
+  color: #fff
+}
 /* FOOTER */
 footer{
   height: 30px;
