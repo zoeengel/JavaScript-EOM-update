@@ -1,0 +1,122 @@
+<!DOCTYPE html onload="myFunction()">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-name">
+            ZOE ENGEL
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <!-- the spans are to create the three lines for the hamburger menu -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="testimonial.html">Testimonials</a>
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </div>
+      
+      <div class="flex-container">
+
+        <div class="card">
+            <div class="card-head">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                  I am hard-working, creative and an open-minded individual, I’m aspiring to be a Web Developer as I
+                  enjoy creating and seeing my ideas come to life. I seek to up-skill myself in Front-End Development and
+                  pursue a career in that field of work.
+            </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+              <h2>EDUCATION</h2>
+          </div>
+          <div class="card-body">
+              <p>
+                <b>HIGH-SCHOOL:</b></br><br>Oude Molen Technical High-school (2015-2019)</p>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+            <h2>WORK EXPERIENCE</h2>
+        </div>
+        <div class="card-body">
+            <p>
+              <b>Company:</b> DC Experts<br>
+              <b>Period:</b> 9 February 2020 - 4th September 2020<br>
+              <b>Role:</b> Jnr. admin assistant
+              <br>
+              <b>Duties:</b><br>
+              - Sorting through emails.<br>
+              - Forwarding emails to the correct department/person<br>
+              - Uploading important documents<br>
+              - Keeping track of clients files(sorting them).</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <h2>THE PASSION</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            My passion for the tech industry came on from a young age as I’ve been exposed and surrounded by
+            computers since primary school as well as being into gaming which sparked a keen interest for anything
+            computer/tech related.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <h2>HOBBIES</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            <ul>
+              <li><i class="fa fa-music"></i> Listening to music</li>
+              <li><i class="fa fa-signing"></i> Dancing</li>
+              <li><i class="fa fa-book"></i> Reading</li>
+              <li><i class="fa fa-tree"></i> Hiking</li>
+              <li><i class="fa fa-comment"></i> Socialising</li>
+              <li><i class="fa fa-coffee"></i> Drinking Coffee</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+<!-- MY SKILLS CONTAINER -->
+<div class="container">
+  <h1>SKILL SET</h1>
+  <div class="bar learning" data-skill="JavaS">20%</div>
+  <div class="bar back basic" data-skill="Python">40%</div>
+  <div class="bar back intermediate" data-skill="CSS">60%</div>
+  <div class="bar front advanced" data-skill="HTML">80%</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p> Copyright © <script>document.write(new Date().getFullYear());</script>, Zoe Engel </p>
+</footer>
+  <script src="intro.js"></script>
+</body>
+</html>
