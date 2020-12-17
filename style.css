@@ -121,6 +121,12 @@ body{
     position: fixed;
 }
 /* ABOUT PAGE*/
+.test-header{
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 9px;
+  padding-top: 25px;
+}
 .flex-container{
   display: flex;
   flex-direction: row;
@@ -278,6 +284,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  line-height: 2;
 }
 
 .myname {
