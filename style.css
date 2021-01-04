@@ -72,7 +72,6 @@ body{
       display: block;
       width: 100%;
       background-color: #387049;
-      /* height: 100%; */
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
@@ -103,9 +102,7 @@ body{
     /* margin-bottom:90px; */
     margin-left:80px;
     margin-top:50px;
-}
-.zoe img{
- position: relative;
+    position: relative;
 }
 .zoe img:hover{
   transform: scale(1.01); 
@@ -120,6 +117,13 @@ body{
     padding: 10px;
     width:500px;
     position: relative;
+}
+@media (max-width:600px){
+  .intro_center{
+    flex: 100%;
+    width: 50%;
+    display: flex;
+  }
 }
 /* ABOUT PAGE*/
 .test-header{
@@ -237,16 +241,16 @@ h1{
 }
 
 .bar.learning::before{
-  width: calc(20% - 10px);
+  width: calc(40% - 10px);
 }
 .bar.basic::before{
-  width: calc(40% - 10px);
+  width: calc(55% - 10px);
 }
 .bar.intermediate::before{
   width: calc(60% - 10px);
 }
 .bar.advanced::before{
-  width: calc(80% - 10px);
+  width: calc(75% - 10px);
 }
 /* PORTFOLIO CARDS */
 .card-body .btn{
@@ -272,20 +276,6 @@ h1{
   background-image: linear-gradient(to right, #4c9b64, #418141);
   text-decoration: none;
   color: #fff
-}
-/* FOOTER */
-footer{
-  height: 30px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-  right: 0;
-  padding: 0;
-  /* position:absolute; */
 }
 
 /* CONTACT FORM */
@@ -348,21 +338,17 @@ ul {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-
 .contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
-
 .contact form label {
   display: block;
 }
-
 .contact form p {
   margin: 0;
 }
-
 .contact form .full {
   grid-column: 1 / 3;
 }
@@ -376,8 +362,7 @@ ul {
   border-radius: 4px;
 }
 
-/* this prevents the end user from 
-resizing the message box */
+/* this prevents the end user from resizing the message box */
 .contact form textarea {
   resize: none;
 }
@@ -420,4 +405,18 @@ resizing the message box */
   .myname {
     text-align: left;
   }
+}
+/* FOOTER */
+footer{
+  height: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  right: 0;
+  padding: 0;
+  /* position:absolute; */
 }
