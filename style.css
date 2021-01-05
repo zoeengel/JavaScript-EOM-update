@@ -45,7 +45,7 @@ body{
 .nav > #nav-check {
   display: none;
 }
-@media (max-width:600px) {
+@media (max-width:768px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -89,13 +89,20 @@ body{
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+    .bio{
+      width:100%;
+      flex-wrap: wrap-reverse;
+    }
+    .zoe{
+      margin-bottom: 390px;
+      margin-left: 100px;
+    }
 
 }
 /* IMAGE OF ME */
-/* .pic_bio{
-    display:flex;
-    flex-wrap   
-} */
+.bio{
+    display:grid
+  }
 .zoe{
     width:770px;
     height:300px;
@@ -110,20 +117,14 @@ body{
 .intro_center{
     color: #fff;
     border:3px solid #fff;
-    margin-left: 700px;
+    /* margin-left: 700px; */
     /* margin-right: 10%; */
     margin-bottom: 60px;
     line-height: 80px ;
     padding: 10px;
     width:500px;
+    float: right;
     position: relative;
-}
-@media (max-width:600px){
-  .intro_center{
-    flex: 100%;
-    width: 50%;
-    display: flex;
-  }
 }
 /* ABOUT PAGE*/
 .test-header{
@@ -286,7 +287,6 @@ h1{
 body {
   background: #000000;
   color: #ffffff;
-  /* line-height: 1.6; */
   padding: 1em;
 }
 
@@ -294,7 +294,7 @@ body {
   max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
+  padding: 4em;
 }
 
 ul {
