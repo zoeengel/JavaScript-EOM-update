@@ -45,63 +45,10 @@ body{
 .nav > #nav-check {
   display: none;
 }
-@media (max-width:768px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: #4c9b64;
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #387049;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-      z-index: 1;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-    .bio{
-      width:100%;
-      flex-wrap: wrap-reverse;
-    }
-    .zoe{
-      margin-bottom: 390px;
-      margin-left: 100px;
-    }
 
-}
 /* IMAGE OF ME */
 .bio{
-    display:grid
+    display:flex
   }
 .zoe{
     width:770px;
@@ -110,22 +57,32 @@ body{
     margin-left:80px;
     margin-top:50px;
     position: relative;
+    opacity: 89%;
 }
 .zoe img:hover{
   transform: scale(1.01); 
 }
+
+/* BIO BOX */
 .intro_center{
     color: #fff;
     border:3px solid #fff;
-    /* margin-left: 700px; */
-    /* margin-right: 10%; */
-    margin-bottom: 60px;
+    margin-bottom: 140px;
+    margin-top: 330px;
     line-height: 80px ;
     padding: 10px;
-    width:500px;
-    float: right;
-    position: relative;
+    width:600px;
+    /* float: right;
+    position: relative; */
+    font-family: inherit;
 }
+.intro_center h1{
+  font-size: 40px;
+}
+.hello{
+  font-size: 20px;
+}
+
 /* ABOUT PAGE*/
 .test-header{
   text-align: center;
@@ -166,22 +123,6 @@ body{
 .card:hover{
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.37);
-}
-/* ABOUT CARDS MEDIA QUERIES */
-@media (max-width: 1000px) {
-  .card {
-    width: 40%;
-    flex:100%
-  }
-}
-@media (max-width: 620px) {
-
-  .container{
-    width: 100%;
-  }
-  .card{
-    widows: 80%;
-  }
 }
 
 /* MY SKILLS CONTAINER */
@@ -240,20 +181,20 @@ h1{
 .bar.back::before{
   background-color: #4c9b64;
 }
-
 .bar.learning::before{
-  width: calc(40% - 10px);
+  width: calc(50% - 10px);
 }
 .bar.basic::before{
-  width: calc(55% - 10px);
+  width: calc(65% - 10px);
 }
 .bar.intermediate::before{
-  width: calc(60% - 10px);
+  width: calc(70% - 10px);
 }
 .bar.advanced::before{
-  width: calc(75% - 10px);
+  width: calc(85% - 10px);
 }
-/* PORTFOLIO CARDS */
+
+/* MY WORK CARDS */
 .card-body .btn{
   display: block;
   color: #fff;
@@ -271,7 +212,9 @@ h1{
 }
 .card-img-top{
   /* background-size: cover; */
-  background-size: contain;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
 }
 .card-body .btn:hover{
   background-image: linear-gradient(to right, #4c9b64, #418141);
@@ -322,6 +265,10 @@ ul {
   background: #408354;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+.my-info .fa{
+  height:40px;
+  height:40px
 }
 
 .my-info h3,
@@ -381,6 +328,102 @@ ul {
   color: #ffffff;
   outline: 0;
 }
+
+/* FOOTER */
+footer{
+  height: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  right: 0;
+  padding: 0;
+  /* position:absolute; */
+}
+
+/* MEDIA QUERIES */
+
+/* NAVIGATION BAR MEDIA QUERIES */
+@media (max-width:768px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #4c9b64;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #387049;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    z-index: 1;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .bio{
+    width:100%;
+    flex-wrap: wrap-reverse;
+  }
+  .zoe{
+    display: flex;
+    width: 250px;
+    height:325px;
+    /* margin-bottom: 390px; */
+    /* margin-left: 100px; */
+  }
+  .intro_center{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+}
+/* ABOUT CARDS MEDIA QUERIES */
+@media (max-width: 1000px) {
+  .card {
+    width: 40%;
+    flex:100%
+  }
+}
+@media (max-width: 620px) {
+
+  .container{
+    width: 100%;
+  }
+  .card{
+    widows: 80%;
+  }
+}
 /* MEDIA QUERIE FOR CONTACT FORM */
 @media only screen and (min-width: 700px) {
   .wrapper {
@@ -405,18 +448,4 @@ ul {
   .myname {
     text-align: left;
   }
-}
-/* FOOTER */
-footer{
-  height: 30px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-  right: 0;
-  padding: 0;
-  /* position:absolute; */
 }
