@@ -181,7 +181,7 @@ h1{
 .bar.back::before{
   background-color: #4c9b64;
 }
-.bar.learning::before{
+.bar.java::before{
   width: calc(50% - 10px);
 }
 .bar.basic::before{
