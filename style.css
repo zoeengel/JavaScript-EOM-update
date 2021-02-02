@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -185,13 +186,16 @@ h1{
   width: calc(50% - 10px);
 }
 .bar.basic::before{
-  width: calc(65% - 10px);
+  width: calc(60% - 10px);
 }
 .bar.intermediate::before{
   width: calc(70% - 10px);
 }
 .bar.advanced::before{
   width: calc(85% - 10px);
+}
+.bar.mysql::before{
+  width: calc(75% - 10px)
 }
 
 /* MY WORK CARDS */
@@ -449,3 +453,4 @@ footer{
     text-align: left;
   }
 }
+
