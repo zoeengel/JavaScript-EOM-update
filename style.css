@@ -54,28 +54,26 @@ body{
 .zoe{
     width:770px;
     height:300px;
-    /* margin-bottom:90px; */
     margin-left:80px;
     margin-top:50px;
     position: relative;
     opacity: 89%;
 }
-.zoe img:hover{
+.zoe img{
   transform: scale(1.01); 
 }
 
 /* BIO BOX */
 .intro_center{
     color: #fff;
-    border:3px solid #fff;
+    text-align: right;
     margin-bottom: 140px;
     margin-top: 330px;
     line-height: 80px ;
     padding: 10px;
     width:600px;
-    /* float: right;
-    position: relative; */
     font-family: inherit;
+
 }
 .intro_center h1{
   font-size: 40px;
@@ -83,6 +81,10 @@ body{
 .hello{
   font-size: 20px;
 }
+span{
+  color: #4c9b64;
+}
+
 
 /* ABOUT PAGE*/
 .test-header{
@@ -93,7 +95,15 @@ body{
 }
 .flex-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  /* flex-flow: wrap; */
+  width: 80vw;
+  margin: 2em auto;
+}
+.flex-container-projects{
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-flow: wrap;
   width: 80vw;
@@ -130,6 +140,7 @@ body{
 .container{
   width: 86%;
   margin: 0 auto;
+  padding: 2em;
 }
 @keyframes load{
   from {
@@ -165,6 +176,7 @@ h1{
   font-size: 14px;
   color: #EEE;
   font-weight: bold;
+  width:70vw
 }
 .bar::before{
   content:  attr(data-skill);
@@ -195,7 +207,7 @@ h1{
   width: calc(85% - 10px);
 }
 .bar.mysql::before{
-  width: calc(75% - 10px)
+  width: calc(73% - 10px)
 }
 
 /* MY WORK CARDS */
@@ -241,7 +253,7 @@ body {
   max-width: 1270px;
   margin-left: auto;
   margin-right: auto;
-  padding: 4em;
+  padding: 2em;
 }
 
 ul {
@@ -272,7 +284,7 @@ ul {
 }
 .my-info .fa{
   height:40px;
-  height:40px
+  transform: translateX(-17px);
 }
 
 .my-info h3,
@@ -395,21 +407,6 @@ footer{
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-  .bio{
-    width:100%;
-    flex-wrap: wrap-reverse;
-  }
-  .zoe{
-    display: flex;
-    width: 250px;
-    height:325px;
-    /* margin-bottom: 390px; */
-    /* margin-left: 100px; */
-  }
-  .intro_center{
-    margin-top: 50px;
-    text-align: center;
-  }
 
 }
 /* ABOUT CARDS MEDIA QUERIES */
@@ -429,7 +426,7 @@ footer{
   }
 }
 /* MEDIA QUERIE FOR CONTACT FORM */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 700px){
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -452,5 +449,114 @@ footer{
   .myname {
     text-align: left;
   }
+
+  /* MEDIA QEURIES FOR LANDING PAGE */
+  @media (max-width: 1250px){
+    .bio{
+      width:100%;
+      flex-wrap: wrap-reverse;
+    }
+    .zoe img{
+      /* display: flex; */
+      transform: translateY(100px);
+      transform: translateX(50px);
+      width: 250px;
+      height:325px;
+      display: none;
+    }
+    .intro_center{
+      margin-top: 50px;
+      /* text-align: center; */
+    }
+  }
 }
 
+
+
+hr{
+  width: 10%;
+  height: 5px;
+  background: #4c9b64;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: none;
+}
+.contain{
+  background-color: #4c9b64;
+  
+}
+.contain1{
+  background-color: #4d4d4d;
+}
+.head{
+  text-align: center;
+  transform: translateY(12px);
+  padding: 25px;
+}
+.body{
+  padding: 30px 20px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 18px;
+  width: 80vw;
+  height: fit-content;
+  padding-bottom: 60px;
+}
+
+/* HOBBIES */
+.hobby-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sr-items{
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px;
+}
+.sr-items i{
+  width: 150px;
+  height: 150px;
+  background: #4c9b64;
+  color: #fff;
+  font-size: 80px;
+  line-height: 150px;
+  border-radius: 50%;
+  margin: 30px;
+}
+.sr-items h5{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 319px){
+  .sr-items{
+    height: 218px;
+  }
+  .sr-items i{
+    line-height: 75px;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+  /* .test-header{
+    font-size: 25px;
+    letter-spacing: 5px;
+  } */
+}
+@media (max-width: 1000px){
+  .test-header{
+    font-size: 25px;
+  }
+}
