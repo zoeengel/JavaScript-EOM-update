@@ -285,6 +285,7 @@ ul {
 .my-info .fa{
   height:40px;
   transform: translateX(-17px);
+  font-size: 24px;
 }
 
 .my-info h3,
@@ -324,7 +325,6 @@ ul {
   border: solid 1px #30442c;
   border-radius: 4px;
 }
-
 /* this prevents the end user from resizing the message box */
 .contact form textarea {
   resize: none;
@@ -449,28 +449,29 @@ footer{
   .myname {
     text-align: left;
   }
-
-  /* MEDIA QEURIES FOR LANDING PAGE */
-  @media (max-width: 1250px){
-    .bio{
-      width:100%;
-      flex-wrap: wrap-reverse;
-    }
-    .zoe img{
-      /* display: flex; */
-      transform: translateY(100px);
-      transform: translateX(50px);
-      width: 250px;
-      height:325px;
-      display: none;
-    }
-    .intro_center{
-      margin-top: 50px;
-      /* text-align: center; */
-    }
+}
+@media (max-width:450px){
+  .my-info .fa{
+    font-size: 18px;
   }
 }
-
+@media (max-width:768px){
+  .profile-img{
+    display: none;
+    transform: translateY(100px);
+    transform: translateX(50px);
+    width: 250px;
+    height:325px;
+  }
+  .intro_center{
+    text-align: right;
+    margin-top: 50px;
+  }
+  .bio{
+    width:100%;
+    flex-wrap: wrap-reverse;
+  }
+}
 
 
 hr{
@@ -484,7 +485,7 @@ hr{
 }
 .contain{
   background-color: #4c9b64;
-  
+
 }
 .contain1{
   background-color: #4d4d4d;
