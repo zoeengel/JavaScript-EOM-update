@@ -1,110 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
-    <title>My Portfolio</title>
-</head>
-<body>
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-name">
-            ZOE ENGEL
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <!-- the spans are to create the three lines for the hamburger menu -->
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="test.html">About</a>
-          <a href="portfolio.html" class="active">Projects</a>
-          <a href="testimonial.html">Testimonials</a>
-          <a href="contact.html">Contact Me</a>
-        </div>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="icon.png" type="image/gif" sizes="16x16" />
+		<title>My Portfolio</title>
+	</head>
+	<body>
+		<div class="nav">
+			<input type="checkbox" id="nav-check" />
+			<div class="nav-header">
+				<div class="nav-name">ZOE ENGEL</div>
+			</div>
+			<div class="nav-btn">
+				<label for="nav-check">
+					<!-- the spans are to create the three lines for the hamburger menu -->
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+			</div>
 
-      <h2 class="test-header">MY PROJECTS</h2>
-      
-      <div class="flex-container-projects">
+			<div class="nav-links">
+				<a href="index.html">Home</a>
+				<a href="test.html">About</a>
+				<a href="portfolio.html" class="active">Projects</a>
+				<a href="testimonial.html">Testimonials</a>
+				<a href="contact.html">Contact Me</a>
+			</div>
+		</div>
 
-        <div class="card">
-            <img src="website.png" height=300px width=450px class="card-img-top" alt=" cts website"> 
-            <div class="card-head">
-                <h2> Cape Town Nightlife</h2>
-            </div>
-            
-            <div class="card-body">
-              <p>
-                This is one of the very first webistes I had built, making use of cards.
-                <br>
-                <br> 
-                The focus of this site is on the psytrance scene in Cape Town and a few of the various festivals that occur along with some basic information on those festivals.
-              </p>
-                <a href="https://ctsnightlife.netlify.app/" class="btn" target="_blank">VIEW</a>
-            </div>
-        </div>
-        <div class="card">
-          <img src="lottery.png" height=300px width=450px class="card-img-top" alt=" cts website"> 
-          <div class="card-head">
-              <h2> Ithuba lottery number generator</h2>
-          </div>
-          <div class="card-body">
-            <p>
-              Created with Python using Tkinter for the GUI
-              <br>
-              <br>
-              A simplified version of the Ithuba Lottery system whereby your enetered values are compared with randomly generated numbers.
-            </p>
-              <a href="https://repl.it/@zoeengel/Lottery-EOM-saturday#age.py" class="btn" target="_blank">VIEW</a>
-          </div>
-      </div>
-      <div class="card">
-        <img src="calculator.png" height=300px width=450px class="card-img-top" alt=" cts website"> 
-        <div class="card-head">
-            <h2> Calculator</h2>
-        </div>
-        <div class="card-body">
-          <p>
-            Using JavaScript, HTML and CSS
-            <br>
-            <br>
-            A simple web-based calculator application.
-          </p>
-            <a href="https://repl.it/@zoeengel/Simple-calculator#simple%20calculator/index.html" class="btn" target="_blank">VIEW</a>
-        </div>
-    </div>
-    <div class="card">
-      <img src="weather.png" height=300px width=450px class="card-img-top" alt=" cts website"> 
-      <div class="card-head">
-          <h2>Weather App</h2>
-      </div>
-      <div class="card-body">
-        <p>
-          Making use of an API in Python
-          <br>
-          <br>
-          I’ve created a simplified application of a weather app, typing in the city and hitting the 'Get weather' button will get you the weather of that specific place.
-        </p>
-          <a href="https://repl.it/@zoeengel/Weather-app#weather_app.py" class="btn" target="_blank">VIEW</a>
-      </div>
-  </div>
-      </div>
+		<h2 class="test-header">MY PROJECTS</h2>
 
-<footer class="footer">
-  <!-- JavaScript to update the year in the footer -->
-  <p> © <script>document.write(new Date().getFullYear());</script> Copyright Zoe Engel</p>
-</footer>
+		<div class="flex-container-projects">
+			<div class="card">
+				<img
+					src="website.png"
+					height="300px"
+					width="450px"
+					class="card-img-top"
+					alt=" cts website"
+				/>
+				<div class="card-head">
+					<h2>Cape Town Nightlife</h2>
+				</div>
 
-</body>
+				<div class="card-body">
+					<p>
+						This is one of the very first webistes I had built, making use of
+						cards.
+						<br />
+						<br />
+						The focus of this site is on the psytrance scene in Cape Town and a
+						few of the various festivals that occur along with some basic
+						information on those festivals.
+					</p>
+					<a
+						href="https://ctsnightlife.netlify.app/"
+						class="btn"
+						target="_blank"
+						>VIEW</a
+					>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					src="lottery.png"
+					height="300px"
+					width="450px"
+					class="card-img-top"
+					alt=" cts website"
+				/>
+				<div class="card-head">
+					<h2>Ithuba lottery number generator</h2>
+				</div>
+				<div class="card-body">
+					<p>
+						Created with Python using Tkinter for the GUI
+						<br />
+						<br />
+						A simplified version of the Ithuba Lottery system whereby your
+						enetered values are compared with randomly generated numbers.
+					</p>
+					<a
+						href="https://repl.it/join/uxbqjics-zoeengel"
+						class="btn"
+						target="_blank"
+						>VIEW</a
+					>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					src="calculator.png"
+					height="300px"
+					width="450px"
+					class="card-img-top"
+					alt=" cts website"
+				/>
+				<div class="card-head">
+					<h2>Calculator</h2>
+				</div>
+				<div class="card-body">
+					<p>
+						Using JavaScript, HTML and CSS
+						<br />
+						<br />
+						A simple web-based calculator application.
+					</p>
+					<a
+						href="https://repl.it/@zoeengel/Simple-calculator#simple%20calculator/index.html"
+						class="btn"
+						target="_blank"
+						>VIEW</a
+					>
+				</div>
+			</div>
+			<div class="card">
+				<img
+					src="weather.png"
+					height="300px"
+					width="450px"
+					class="card-img-top"
+					alt=" cts website"
+				/>
+				<div class="card-head">
+					<h2>Weather App</h2>
+				</div>
+				<div class="card-body">
+					<p>
+						Making use of an API in Python
+						<br />
+						<br />
+						I’ve created a simplified application of a weather app, typing in
+						the city and hitting the 'Get weather' button will get you the
+						weather of that specific place.
+					</p>
+					<a
+						href="https://repl.it/@zoeengel/Weather-app#weather_app.py"
+						class="btn"
+						target="_blank"
+						>VIEW</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<!-- JavaScript to update the year in the footer -->
+			<p>
+				©
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				Copyright Zoe Engel
+			</p>
+		</footer>
+	</body>
 </html>
